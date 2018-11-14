@@ -1,1 +1,3 @@
-# Io language exercise
+# 笨办法学io
+
+基本上在抄袭《笨办法学python》和《io语言手册》
