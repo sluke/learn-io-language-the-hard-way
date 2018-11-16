@@ -43,7 +43,11 @@ Microsoft在2015年4月30日Build 开发者大会上正式宣布了 Visual Studi
 
 https://code.visualstudio.com/
 
-### 给 visual studio code安装Code Runner插件
+### 给 visual studio code 安装 io 语言支持插件
+
+在插件中心里，搜索 io 或者 iolang-syntax ，安装上
+
+### 给 visual studio code 安装 Code Runner 插件
 
 在插件中心里，搜索Code Runner插件，安装上，在编辑器的配置文件中，增加
 
