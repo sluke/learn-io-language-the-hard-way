@@ -1,0 +1,337 @@
+/* typohan.css | MIT License | github.com/iceway/typohan.css */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* 定义全局颜色和字体；防止浏览器默认的字符缩放 */
+  html {
+    color: #5c5c5c;
+    background-color: #f8f8f8;
+    font: 17.6px/1.3em Helvetica, Tahoma, Arial, Roboto, "Liberation Sans", "PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans CN", "Source Han Sans SC", "Wenquanyi Micro Hei", sans-serif;
+    -moz-font-size-adjust: 100%;
+    -webkit-font-size-adjust: 100%;
+    font-size-adjust: 100%;
+  }
+  body {
+    margin: 2em auto 4em auto;
+    max-width: 1024px;
+  }
+  /* 标题 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #333;
+    line-height: 1.35em;
+    margin: 1.5em 0 0.5em 0;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  /* 段落 */
+  p {
+    margin: 1em 0;
+    line-height: 1.6em;
+  }
+  p.poem-like {
+    text-indent: 0;
+    margin-left: 2em;
+  }
+  /* 列表 */
+  ul,
+  ol {
+    padding-left: 2em;
+    margin-bottom: 2em;
+  }
+  ul li,
+  ol li {
+    margin: 0.5em 0;
+  }
+  ul p,
+  ol p {
+    text-indent: 0;
+  }
+  ul blockquote,
+  ol blockquote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  ul.none-list,
+  ol.none-list {
+    list-style: none;
+  }
+  /* HTML5标签默认显示为块 */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  /* 多媒体标签和img类似，显示为行内块 */
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 1em 0 2em 0;
+  }
+  /* 表单元素默认不会继承父级元素font，单独设置font */
+  button,
+  input,
+  select,
+  textarea {
+    font: normal 1em/1.5em Helvetica, Tahoma, Arial, Roboto, "Liberation Sans", "PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans CN", "Source Han Sans SC", "Wenquanyi Micro Hei", sans-serif;
+  }
+  /* 取消表格中单元格之间的间隔边距，并让相邻边重合 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+    font: normal 0.9em/1em Helvetica, Tahoma, Arial, Roboto, "Liberation Sans", "PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans CN", "Source Han Sans SC", "Wenquanyi Micro Hei", sans-serif;
+  }
+  table tr,
+  table th,
+  table td,
+  table caption {
+    border: 1px solid #adadad;
+    padding: 0.5em 1em;
+    text-align: left;
+  }
+  table th,
+  table caption {
+    font-weight: bold;
+  }
+  table caption {
+    text-align: center;
+  }
+  /* 块及段落引用 */
+  blockquote {
+    font: normal 1em/1.5 Baskerville, Georgia, "EB Garamond", "Liberation Serif", "Kaiti SC", STkaiti, KaiTi, "AR PL UKai CN", serif;
+    color: #6c6c6c;
+    border-left: 3px solid #dcdcdc;
+    position: relative;
+    margin: 1em 2em;
+    padding-left: 2em;
+  }
+  /* 中文环境：强调下面加点，而不是使用斜体 */
+  em {
+    -moz-text-emphasis: filled circle;
+    -webkit-text-emphasis: filled circle;
+    text-emphasis: filled circle;
+    -moz-text-emphasis-position: under;
+    -webkit-text-emphasis-position: under;
+    text-emphasis-position: under;
+    font-style: inherit;
+    border-bottom-style: dotted;
+    border-bottom-width: calc(0px);
+    padding-bottom: calc(0px);
+  }
+  /* 不推荐在中文环境使用<i>标签强调某些内容，中文没有斜体字，而英文手写本来就是斜体字。 */
+  i {
+    font-style: italic;
+  }
+  strong,
+  b {
+    font-weight: bold;
+    color: inherit;
+  }
+  /* 属性添加鼠标问号 */
+  abbr {
+    cursor: help;
+    border-bottom: 1px dotted;
+  }
+  /* 删除样式 */
+  del {
+    text-decoration: line-through;
+  }
+  /* 上下标 */
+  sub,
+  sup {
+    font-size: x-small;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  small {
+    font-size: smaller;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  /* 链接颜色 */
+  a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #cecece;
+  }
+  a:hover {
+    border-bottom-color: #5c5c5c;
+  }
+  /* 地址，变量等使用等宽字体 */
+  address,
+  caption,
+  cite,
+  dfn,
+  var {
+    font: normal "Source Code Pro", monospace;
+  }
+  /* 代码片段 */
+  code,
+  pre {
+    background: #f0f0f0;
+  }
+  code {
+    margin: 0 0.2em;
+    padding: 0.2em;
+    font: normal 0.8em/1.5em "Source Code Pro", monospace;
+  }
+  pre {
+    margin: 1em 0;
+    padding: 0.8em 1em;
+    border: 1px solid #5c5c5c;
+    border-radius: 5px;
+    display: block;
+    line-height: 1.5em;
+    overflow-x: auto;
+    word-wrap: normal;
+    white-space: pre;
+  }
+  pre code {
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+  hr {
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    margin-bottom: 1em;
+    height: 10px;
+  }
+  /* 引用符号 */
+  q {
+    quotes: "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019";
+  }
+  q:lang(zh) {
+    quotes: "\300c" "\300d" "\300e" "\300f" "\300c" "\300d" "\300e" "\300f" "\300c" "\300d" "\300e" "\300f";
+  }
+  q:before {
+    content: open-quote;
+  }
+  q:after {
+    content: close-quote;
+  }
+  /* 键盘按键 */
+  kbd {
+    background-color: #f0f0f0;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+    padding: 0 1px;
+  }
+  /* ===特定类样式=== */
+  /* 隐藏hidden类的元素 */
+  .hidden {
+    display: none;
+  }
+  .html2pdf h1 {
+    padding-top: 10em;
+    text-align: center;
+  }
+  .html2pdf h1 + p {
+    text-align: center;
+    font-weight: bold;
+  }
+  .html2pdf h2 {
+    page-break-before: always;
+  }
+  .html2pdf pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  .eng-style p {
+    text-indent: 0;
+  }
+  .eng-style em {
+    font-style: italic;
+    -moz-text-emphasis: inherit;
+    -webkit-text-emphasis: inherit;
+    text-emphasis: inherit;
+    -moz-text-emphasis-position: inherit;
+    -webkit-text-emphasis-position: inherit;
+    text-emphasis-position: inherit;
+    border: inherit;
+    padding: inherit;
+  }
+  /* 标题前面自动加章节号 */
+  .counter h1 {
+    counter-reset: h2counter;
+  }
+  .counter h2 {
+    counter-reset: h3counter;
+  }
+  .counter h2:before {
+    counter-increment: h2counter;
+    content: counter(h2counter) ".\0000a0\0000a0";
+  }
+  .counter h3 {
+    counter-reset: h4counter;
+  }
+  .counter h3:before {
+    counter-increment: h3counter;
+    content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+  }
+  .counter h4 {
+    counter-reset: h5counter;
+  }
+  .counter h4:before {
+    counter-increment: h4counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+  }
+  .counter h5 {
+    counter-reset: h6counter;
+  }
+  .counter h5:before {
+    counter-increment: h5counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) ".\0000a0\0000a0";
+  }
+  .counter h6:before {
+    counter-increment: h6counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ".\0000a0\0000a0";
+  }
