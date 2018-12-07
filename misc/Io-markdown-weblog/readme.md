@@ -7,6 +7,8 @@
 - 生成指定目录中所有 markdown 文件对应的 html 文件
 
 ### 命令帮助
+
+- run.io 是可执行的脚本文件
 - Index writeIndexHtml // 生成首页
 - Index writeAllArticleHtml // 生成所有文章页面
 - Article writeArticleHtml("about.md") // 生成单篇文章，参数为 markdown 文件名

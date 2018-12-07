@@ -42,5 +42,7 @@
 
 [Io语言入门](https://github.com/sluke/Io-language-exercise/blob/master/io-guide-cn.md)
 
+[一个使用Io语言实现的简单weblog](https://github.com/sluke/Io-language-exercise/tree/master/misc/Io-markdown-weblog)
+
 [结束](https://github.com/sluke/Io-language-exercise/blob/master/end.md)
 
